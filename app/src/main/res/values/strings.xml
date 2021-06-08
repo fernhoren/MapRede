@@ -4,7 +4,7 @@
     <string name="register_title">___ Criar conta ____</string>
     <string name="tit_recuperar">___ Recuperar senha ___</string>
     <string name="remove_title">___ Apagar Usuário ___</string>
-    <string name="facebook_app_id">1893379734173367</string>
+    <string name="facebook_app_id">Your API Key Facebook here</string>
     <string name="fb_login_protocol_scheme">fb1893379734173367</string>
 
     <string name="descrip_logo">logo do aplicativo</string>
