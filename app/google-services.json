@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1012666842272",
+    "firebase_url": "https://maprede-308721-default-rtdb.firebaseio.com",
+    "project_id": "maprede-308721",
+    "storage_bucket": "maprede-308721.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012666842272:android:22dc5c83c2b1adfa2a9dc5",
+        "android_client_info": {
+          "package_name": "com.maprede"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012666842272-aa2as4nn5nc8gag3bevo45ucn8unlogm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWSV0-wyN6QHz6Zw2RzHM-I20ok9y9HlM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012666842272-aa2as4nn5nc8gag3bevo45ucn8unlogm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

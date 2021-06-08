@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">MAPREDE</string>
+    <string name="sign_in_title">___ Entrar ___</string>
+    <string name="register_title">___ Criar conta ____</string>
+    <string name="tit_recuperar">___ Recuperar senha ___</string>
+    <string name="remove_title">___ Apagar Usuário ___</string>
+    <string name="facebook_app_id">1893379734173367</string>
+    <string name="fb_login_protocol_scheme">fb1893379734173367</string>
+
+    <string name="descrip_logo">logo do aplicativo</string>
+    <string name="tit_mostrar_senha">Mostrar senha</string>
+    <string name="tit_privacidade">Concordo com os Termos e Políticas de Privacidade</string>
+    <string name="hint_email">e-mail</string>
+    <string name="hint_nome">Nome</string>
+    <string name="hint_sobrenome">Sobrenome</string>
+    <string name="hint_senha">Senha</string>
+    <string name="hint_conf_senha">Confirmar senha</string>
+    <string name="btn_registrar_tit">cadastrar</string>
+    <string name="btn_login_tit">login</string>
+    <string name="btn_recuperar_senha_tit">recuperar senha</string>
+    <string name="btn_envio_senha_tit">enviar senha</string>
+    <string name="btn_voltar_login_tit">voltar a login</string>
+    <string name="btn_alarme_lig">Ligação instântanea</string>
+    <string name="btn_remove_tit">Apagar Usuário</string>
+    <string name="menu_instruc">Instruções</string>
+    <string name="menu_novo_proj">Novo Projeto</string>
+    <string name="menu_salvar_proj">Salvar Projeto</string>
+    <string name="voltar_a_projeto_ativo">Voltar a Projeto Ativo</string>
+    <string name="confirmar_logout">Confirmar logout</string>
+    <string name="remover_item">Apagar usuario</string>
+    <string name="btn_logout_tit">Logout</string>
+    <string name="policies">
+    <a href="https://cidadepoeticacartografia.wordpress.com/projetos/maprede/politica-de-privacidade/">Políticas de Privacidade, Termos e Condições</a></string>
+
+    <string name="title_activity_user_ini">MainActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Logout</string>
+    <string name="bnt_menu_prin">botão principal de menu do mapa</string>
+    <string name="bot_walkie_talkie">botão de walkie talkie</string>
+    <string name="menu_geonotas">Menu de Geonotas</string>
+    <string name="marker_loc_atual_criado">marcador de localização atual criado</string>
+    <string name="marcador_foto_criado">marcador de foto criado</string>
+    <string name="marcador_video_criado">Marcador de video criado</string>
+    <string name="marcador_audio_criado">marcador de audio criado</string>
+    <string name="marcador_texto_criado">marcador de texto criado</string>
+    <string name="bot_setting_mapa">Botão de settings do mapa</string>
+    <string name="lista_de_participantes_pr">Lista de participantes</string>
+    <string name="menu_projeto_coletivo">Menu de projeto coletivo</string>
+    <string name="bot_apagar_desenho">Botão de apagar desenho</string>
+    <string name="bot_criar_circulo">botão de criar circulo</string>
+    <string name="bot_criar_linha">Botão de criar linha</string>
+    <string name="menu_desenho">Menu de desenho</string>
+    <string name="bot_mover_marcador">Botão de mover marcador</string>
+    <string name="bot_apagar_marcador">Botão de apagar marcador</string>
+    <string name="bot_adicionar_marcador">Botão de adicionar marcador</string>
+    <string name="menu_marcadores">Menu de edição de marcadores</string>
+    <string name="ir_loc_atual">Ir à localização atual</string>
+    <string name="parar_percurso">Parar percurso</string>
+    <string name="pausar_percurso">Pausar percurso</string>
+    <string name="iniciar_gravar_percurso">Iniciar gravar percurso</string>
+
+
+</resources>

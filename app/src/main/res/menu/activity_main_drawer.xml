@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_instruction"
+            android:icon="@drawable/ic_compaso"
+            android:title="@string/menu_instruc" />
+        <item
+            android:id="@+id/nav_novo_proj"
+            android:icon="@drawable/ic_map_ic"
+            android:title="@string/menu_novo_proj" />
+        <item
+            android:id="@+id/nav_salvar_proj"
+            android:icon="@drawable/ic_salvar"
+            android:title="@string/menu_salvar_proj" />
+        <item
+            android:id="@+id/map_user"
+            android:icon="@drawable/ic_ativo"
+            android:title="@string/voltar_a_projeto_ativo" />
+        <item
+            android:id="@+id/remove_user"
+            android:icon="@drawable/ic_baseline_person_off_24"
+            android:title="@string/remover_item" />
+    </group>
+</menu>

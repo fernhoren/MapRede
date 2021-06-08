@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_instruction">
+
+    <fragment
+        android:id="@+id/nav_instruction"
+        android:name="com.maprede.ui.Instructions.InstructionsFragment"
+        android:label="@string/menu_instruc"
+        tools:layout="@layout/fragment_instructions" />
+
+    <fragment
+        android:id="@+id/nav_novo_proj"
+        android:name="com.maprede.ui.novo_project.NovoProjectFragment"
+        android:label="@string/menu_novo_proj"
+        tools:layout="@layout/fragment_novo_project" >
+        <action
+            android:id="@+id/action_nav_novo_proj_to_map_user"
+            app:destination="@id/map_user" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_salvar_proj"
+        android:name="com.maprede.ui.salvar.SalvarFragment"
+        android:label="@string/menu_salvar_proj"
+        tools:layout="@layout/fragment_salvar" />
+    <fragment
+        android:id="@+id/map_user"
+        android:name="com.maprede.map_user"
+        android:label="fragment_map_user"
+        tools:layout="@layout/fragment_map_user" >
+        <action
+            android:id="@+id/action_map_user_to_nav_salvar_proj"
+            app:destination="@id/nav_salvar_proj" />
+    </fragment>
+    <fragment
+        android:id="@+id/remove_user"
+        android:name="com.maprede.remove_user"
+        android:label="fragment_remove_user"
+        tools:layout="@layout/fragment_remove_user" />
+</navigation>

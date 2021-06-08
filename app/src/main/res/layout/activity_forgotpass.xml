@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".forgotpass">
+
+    <ImageView
+        android:id="@+id/logo_hor_maprede_daynight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:layout_marginBottom="120sp"
+        android:contentDescription="@string/descrip_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_logosimbolo_mapred" />
+
+    <TextView
+        android:id="@+id/tit_recuperar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:freezesText="false"
+        android:gravity="center"
+        android:lineSpacingExtra="10sp"
+        android:lines="1"
+        android:text="@string/tit_recuperar"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/edt_email_rec"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#000000"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/cinza_meio"
+        android:textColorHint="@color/cinza_meio"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btn_recuperar_senha"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15sp"
+        android:backgroundTint="@color/amarelo"
+        android:text="@string/btn_envio_senha_tit"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_login_back"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="@color/verde_escuro2"
+        android:text="@string/btn_voltar_login_tit"
+        android:textColor="@color/white" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_rec"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/amarelo"
+        android:visibility="invisible"
+        android:layout_marginTop="310dp"
+        />
+
+
+</LinearLayout>

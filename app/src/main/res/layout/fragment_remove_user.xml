@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/remove_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".remove_user">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@string/descrip_logo"
+        android:src="@drawable/ic_logomarca_maprede_day_night" />
+
+    <TextView
+        android:id="@+id/text_entrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:fontFamily="sans-serif-black"
+        android:freezesText="false"
+        android:gravity="center"
+        android:lineSpacingExtra="10sp"
+        android:lines="1"
+        android:text="@string/remove_title"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/edt_nome"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300dp"
+        android:autofillHints=""
+        android:backgroundTint="#000000"
+        android:hint="@string/hint_nome"
+        android:inputType="textPersonName"
+        android:textColor="@color/cinza_meio"
+        android:textColorHint="@color/cinza_meio" />
+
+    <TextView
+        android:id="@+id/edt_email"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="360dp"
+        android:backgroundTint="#000000"
+        android:hint="@string/hint_email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/cinza_meio"
+        android:textColorHint="@color/cinza_meio" />
+
+    <Button
+        android:id="@+id/btn_remove"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="435dp"
+        android:backgroundTint="@color/vermelho"
+        android:text="@string/btn_remove_tit"
+        android:textColor="@color/white" />
+
+    <ProgressBar
+        android:id="@+id/loginprogressBar_remove"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/amarelo"
+        android:visibility="invisible" />
+
+</FrameLayout>

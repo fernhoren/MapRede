@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".signin">
+
+    <ImageView
+        android:id="@+id/logo_hor_maprede_daynight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120sp"
+        android:layout_marginVertical="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_logomarca_maprede_day_night"
+        android:contentDescription="@string/descrip_logo" />
+
+    <TextView
+        android:id="@+id/text_entrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:freezesText="false"
+        android:gravity="center"
+        android:lineSpacingExtra="10sp"
+        android:lines="1"
+        android:text="@string/sign_in_title"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@id/logo_hor_maprede_daynight"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@id/logo_hor_maprede_daynight"
+        app:layout_constraintTop_toBottomOf="@id/logo_hor_maprede_daynight" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_email"
+        android:textColorHint="@color/cinza_meio"
+        android:backgroundTint="#000000"
+        android:textColor="@color/cinza_meio"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/edt_senha"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_senha"
+        android:textColorHint="@color/cinza_meio"
+        android:backgroundTint="#000000"
+        android:textColor="@color/cinza_meio"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:importantForAutofill="no" />
+
+    <CheckBox
+        android:id="@+id/ckb_mostrar_senha"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@color/verde_escuro2"
+        android:text="@string/tit_mostrar_senha"
+        android:textColor="@color/cinza_meio" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/verde_escuro"
+        android:text="@string/btn_login_tit"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btn_registrar"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5sp"
+        android:backgroundTint="@color/verde_escuro2"
+        android:text="@string/btn_registrar_tit"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btn_recuperar"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5sp"
+        android:backgroundTint="@color/amarelo"
+        android:text="@string/btn_recuperar_senha_tit"
+        android:textColor="@color/white"
+        />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_FB"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/policies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/policies"
+        android:textSize="14sp"
+     />
+
+    <ProgressBar
+        android:id="@+id/loginprogressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/amarelo"
+        android:visibility="invisible"
+        android:layout_marginTop="85dp"
+        />
+
+
+
+</LinearLayout>

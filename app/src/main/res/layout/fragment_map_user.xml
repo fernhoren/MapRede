@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".map_user">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="395dp"
+            android:layout_height="119dp"
+            android:layout_marginTop="36dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/geonotas_prin"
+                style="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/menu_geonotas"
+                android:foreground="@drawable/ic_btn_pr_geonotas"
+                app:backgroundTint="#00FFFFFF"
+                app:fabSize="normal"
+                app:maxImageSize="1dp"
+                app:rippleColor="@null" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/geonotas_loc"
+                style="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:contentDescription="@string/marker_loc_atual_criado"
+                android:foreground="@drawable/ic_btn_sec_geon_loc_atual"
+                app:backgroundTint="#00FFFFFF"
+                app:fabSize="mini"
+                app:maxImageSize="1dp"
+                app:rippleColor="@null" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/geonotas_photo"
+                style="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:contentDescription="@string/marcador_foto_criado"
+                android:foreground="@drawable/ic_btn_sec_geon_foto"
+                app:backgroundTint="#00FFFFFF"
+                app:fabSize="mini"
+                app:maxImageSize="1dp"
+                app:rippleColor="@null" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/geonotas_video"
+                style="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:contentDescription="@string/marcador_video_criado"
+                android:foreground="@drawable/ic_btn_sec_geon_video"
+                app:backgroundTint="#00FFFFFF"
+                app:fabSize="mini"
+                app:maxImageSize="1dp"
+                app:rippleColor="@null" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/geonotas_audio"
+                style="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:contentDescription="@string/marcador_audio_criado"
+                android:foreground="@drawable/ic_btn_sec_geon_audio"
+                app:backgroundTint="#00FFFFFF"
+                app:fabSize="mini"
+                app:maxImageSize="1dp"
+                app:rippleColor="@null" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/geonotas_texto"
+                style="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:contentDescription="@string/marcador_texto_criado"
+                android:foreground="@drawable/ic_btn_sec_geon_text"
+                app:backgroundTint="#00FFFFFF"
+                app:fabSize="mini"
+                app:maxImageSize="1dp"
+                app:rippleColor="@null" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/geonotas_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/bot_setting_mapa"
+                android:foreground="@drawable/ic_btn_setting_map"
+                app:backgroundTint="#00FFFFFF"
+
+                app:fabSize="mini" />
+
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="354dp"
+            android:layout_height="368dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.956">
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/menu_map_colec_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/lista_de_participantes_pr"
+                android:foreground="@drawable/ic_btn_sub_col_sec_list"
+                app:backgroundTint="#00FFFFFF"
+                app:fabSize="mini"
+                app:layout_constraintBottom_toTopOf="@+id/menu_map_edit_shape"
+                app:layout_constraintEnd_toStartOf="@+id/menu_map_first_colect"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/menu_map_first_colect"
+                app:layout_constraintVertical_bias="0.0"
+                app:rippleColor="#FFFFFF" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/menu_map_first_colect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="6dp"
+                android:contentDescription="@string/menu_projeto_coletivo"
+                android:foreground="@drawable/ic_btn_sub_pr_colectivo"
+                app:backgroundTint="#00FFFFFF"
+                app:fabSize="normal"
+                app:layout_constraintBottom_toTopOf="@+id/menu_map_first_des"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.654"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:maxImageSize="30dp"
+                app:rippleColor="#FFFFFF" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/menu_map_edit_erase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/bot_apagar_desenho"
+                android:foreground="@drawable/ic_btn_sub_sec_des_erase"
+                app:backgroundTint="#00FFFFFF"
+                app:fabSize="mini"
+                app:layout_constraintBottom_toTopOf="@+id/menu_map_first_geon_drag"
+                app:layout_constraintEnd_toStartOf="@+id/menu_map_edit_circle"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/menu_map_first_des"
+                app:layout_constraintVertical_bias="0.0"
+                app:rippleColor="#FFFFFF" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/menu_map_edit_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/bot_criar_circulo"
+                android:foreground="@drawable/ic_btn_sub_sec_des_circle"
+                app:backgroundTint="#00FFFFFF"
+                app:fabSize="mini"
+                app:layout_constraintBottom_toTopOf="@+id/menu_map_first_geon_menos"
+                app:layout_constraintEnd_toStartOf="@+id/menu_map_edit_shape"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/menu_map_first_des"
+                app:layout_constraintVertical_bias="0.0"
+                app:rippleColor="#FFFFFF" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/menu_map_edit_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/bot_criar_linha"
+                android:foreground="@drawable/ic_btn_sub_sec_des_shape"
+                app:backgroundTint="#00FFFFFF"
+                app:fabSize="mini"
+                app:layout_constraintBottom_toTopOf="@+id/menu_map_first_geon_mais"
+                app:layout_constraintEnd_toStartOf="@+id/menu_map_first_des"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/menu_map_first_des"
+                app:layout_constraintVertical_bias="0.0"
+                app:rippleColor="#FFFFFF" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/menu_map_first_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="6dp"
+                android:contentDescription="@string/menu_desenho"
+                android:foreground="@drawable/ic_btn_sub_pr_desenho"
+                app:backgroundTint="#00FFFFFF"
+                app:fabSize="normal"
+                app:layout_constraintBottom_toTopOf="@+id/menu_map_first_geon_edit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.654"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/menu_map_first_colect"
+                app:maxImageSize="30dp"
+                app:rippleColor="#FFFFFF" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/menu_map_first_geon_drag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="6dp"
+                android:contentDescription="@string/bot_mover_marcador"
+                android:foreground="@drawable/ic_btn_sub_sec_geon_drag"
+                app:backgroundTint="#00FFFFFF"
+                app:fabSize="mini"
+                app:layout_constraintBottom_toTopOf="@+id/menu_map_stop"
+                app:layout_constraintEnd_toStartOf="@+id/menu_map_first_geon_menos"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/menu_map_first_des"
+                app:layout_constraintTop_toTopOf="@+id/menu_map_first_geon_edit"
+                app:layout_constraintVertical_bias="0.0"
+                app:rippleColor="#FFFFFF" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/menu_map_first_geon_menos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="6dp"
+                android:contentDescription="@string/bot_apagar_marcador"
+                android:foreground="@drawable/ic_btn_sub_sec_geon_menos"
+                app:backgroundTint="#00FFFFFF"
+                app:fabSize="mini"
+                app:layout_constraintBottom_toTopOf="@+id/menu_map_pause"
+                app:layout_constraintEnd_toStartOf="@+id/menu_map_first_geon_mais"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/menu_map_first_des"
+                app:layout_constraintTop_toTopOf="@+id/menu_map_first_geon_edit"
+                app:layout_constraintVertical_bias="0.0"
+                app:rippleColor="#FFFFFF" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/menu_map_first_geon_mais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="6dp"
+                android:contentDescription="@string/bot_adicionar_marcador"
+                android:foreground="@drawable/ic_btn_sub_sec_geon_mais"
+                app:backgroundTint="#00FFFFFF"
+                app:fabSize="mini"
+                app:layout_constraintBottom_toTopOf="@+id/menu_map_rec"
+                app:layout_constraintEnd_toStartOf="@+id/menu_map_first_geon_edit"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/menu_map_first_des"
+                app:layout_constraintTop_toTopOf="@+id/menu_map_first_geon_edit"
+                app:layout_constraintVertical_bias="0.0"
+                app:rippleColor="#FFFFFF" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/menu_map_first_geon_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:contentDescription="@string/menu_marcadores"
+                android:foreground="@drawable/ic_btn_sub_pr_geonotas_edit"
+                app:backgroundTint="#00FFFFFF"
+                app:fabSize="normal"
+                app:layout_constraintBottom_toTopOf="@+id/menu_map_first_loc_atual"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.654"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/menu_map_first_des"
+                app:rippleColor="#FFFFFF" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/menu_map_first_loc_atual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/ir_loc_atual"
+                android:foreground="@drawable/ic_btn_sub_pr_loc_atual"
+                app:fabSize="normal"
+                app:layout_constraintBottom_toTopOf="@+id/menu_map_first"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.654"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/menu_map_first_geon_edit"
+                app:layout_constraintVertical_bias="1.0"
+                app:maxImageSize="30dp"
+                app:rippleColor="#FFFFFF" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/menu_map_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="12dp"
+                android:contentDescription="@string/parar_percurso"
+                android:foreground="@drawable/ic_btn_sub_sec_stop"
+                app:fabSize="normal"
+                app:layout_constraintEnd_toStartOf="@+id/menu_map_pause"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/menu_map_first"
+                app:maxImageSize="30dp"
+                app:rippleColor="#FFFFFF" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/menu_map_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="12dp"
+                android:contentDescription="@string/pausar_percurso"
+                android:foreground="@drawable/ic_btn_sub_sec_pause"
+                app:fabSize="normal"
+                app:layout_constraintEnd_toStartOf="@+id/menu_map_rec"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/menu_map_first"
+                app:maxImageSize="30dp"
+                app:rippleColor="#FFFFFF" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/menu_map_rec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="12dp"
+                android:contentDescription="@string/iniciar_gravar_percurso"
+                android:foreground="@drawable/ic_btn_sub_sec_rec"
+                app:fabSize="normal"
+                app:layout_constraintEnd_toStartOf="@+id/menu_map_first"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/menu_map_first"
+                app:maxImageSize="30dp"
+                app:rippleColor="#FFFFFF" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/menu_map_first_walkie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/bot_walkie_talkie"
+                android:foreground="@drawable/ic_btn_sec_walkie_group"
+                app:fabSize="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/menu_map_first"
+                app:layout_constraintTop_toTopOf="@+id/menu_map_first"
+                app:layout_constraintVertical_bias="0.0"
+                app:maxImageSize="30dp"
+                app:rippleColor="#FFFFFF" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/menu_map_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginStart="68dp"
+                android:alpha="0.5"
+                android:contentDescription="@string/bnt_menu_prin"
+                android:foreground="@drawable/ic_btn_pr_float_mais"
+                app:borderWidth="0dp"
+                app:fabCustomSize="85dp"
+                app:fabSize="auto"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/menu_map_rec"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.968"
+                app:useCompatPadding="false"
+                tools:visibility="visible" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
